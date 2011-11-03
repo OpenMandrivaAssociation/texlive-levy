@@ -1,3 +1,9 @@
+# revision 21750
+# category Package
+# catalog-ctan /fonts/greek/levy
+# catalog-date 2011-03-16 12:04:55 +0100
+# catalog-license gpl2
+# catalog-version undef
 Name:		texlive-levy
 Version:	20110316
 Release:	1
@@ -96,6 +102,7 @@ documentation).
 %doc %{_texmfdistdir}/doc/fonts/levy/makeall
 %doc %{_texmfdistdir}/doc/fonts/levy/makefont
 %doc %{_texmfdistdir}/doc/fonts/levy/testfont
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -106,3 +113,5 @@ documentation).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
