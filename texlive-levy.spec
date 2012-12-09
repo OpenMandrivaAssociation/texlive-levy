@@ -103,3 +103,17 @@ documentation).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110316-2
++ Revision: 753282
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110316-1
++ Revision: 718847
+- texlive-levy
+- texlive-levy
+- texlive-levy
+- texlive-levy
+
