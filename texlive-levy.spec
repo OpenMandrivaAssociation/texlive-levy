@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-levy
 Version:	20110316
-Release:	9
+Release:	10
 Summary:	Fonts for typesetting classical greek
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/greek/levy
