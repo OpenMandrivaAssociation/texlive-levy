@@ -5,8 +5,8 @@
 # catalog-license gpl2
 # catalog-version undef
 Name:		texlive-levy
-Version:	20110316
-Release:	10
+Version:	20170414
+Release:	1
 Summary:	Fonts for typesetting classical greek
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/greek/levy
