@@ -1,18 +1,12 @@
-# revision 21750
-# category Package
-# catalog-ctan /fonts/greek/levy
-# catalog-date 2011-03-16 12:04:55 +0100
-# catalog-license gpl2
-# catalog-version undef
 Name:		texlive-levy
-Version:	20190228
+Version:	21750
 Release:	1
 Summary:	Fonts for typesetting classical greek
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/greek/levy
 License:	GPL2
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/levy.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/levy.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/levy.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/levy.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ see lgreek (with English documentation) or levy (with German
 documentation).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -96,24 +90,10 @@ documentation).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110316-2
-+ Revision: 753282
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110316-1
-+ Revision: 718847
-- texlive-levy
-- texlive-levy
-- texlive-levy
-- texlive-levy
-
