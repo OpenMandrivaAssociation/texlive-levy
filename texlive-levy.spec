@@ -3,7 +3,7 @@ Version:	21750
 Release:	2
 Summary:	Fonts for typesetting classical greek
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/greek/levy
+URL:		https://www.ctan.org/tex-archive/fonts/greek/levy
 License:	GPL2
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/levy.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/levy.doc.r%{version}.tar.xz
